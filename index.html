@@ -3,32 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jenkins CI/CD Demo</title>
+
+    <title>Jenkins CI/CD 3D</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <div class="container">
-        <h1>Jenkins CI/CD Deployment</h1>
+    <!-- Animated Background -->
+    <div class="background">
+        <div class="orb orb1"></div>
+        <div class="orb orb2"></div>
+        <div class="grid"></div>
+    </div>
 
-        <p>
-            This website is automatically deployed using:
-        </p>
+    <main>
 
-        <div class="technologies">
-            <span>GitHub</span>
-            <span>Jenkins</span>
-            <span>Docker</span>
-            <span>AWS EC2</span>
+        <div class="badge">
+            ⚡ CI/CD AUTOMATION
         </div>
 
-        <button onclick="showMessage()">
+        <h1>
+            Jenkins
+            <span>CI/CD</span>
+            Deployment
+        </h1>
+
+        <p class="subtitle">
+            Automated application deployment using
+            GitHub, Jenkins, Docker and AWS EC2
+        </p>
+
+        <!-- Pipeline -->
+        <section class="pipeline">
+
+            <div class="card">
+                <div class="icon">⌘</div>
+                <h2>GitHub</h2>
+                <p>Source Code</p>
+            </div>
+
+            <div class="arrow">➜</div>
+
+            <div class="card active">
+                <div class="icon">⚙</div>
+                <h2>Jenkins</h2>
+                <p>CI/CD Pipeline</p>
+            </div>
+
+            <div class="arrow">➜</div>
+
+            <div class="card">
+                <div class="icon">◈</div>
+                <h2>Docker</h2>
+                <p>Container</p>
+            </div>
+
+            <div class="arrow">➜</div>
+
+            <div class="card">
+                <div class="icon">☁</div>
+                <h2>AWS EC2</h2>
+                <p>Deployment</p>
+            </div>
+
+        </section>
+
+        <!-- Deployment Button -->
+        <button id="deployBtn" onclick="showMessage()">
+            <span>🚀</span>
             Test Deployment
         </button>
 
-        <p id="message"></p>
-    </div>
+        <!-- Message -->
+        <div id="message"></div>
+
+        <!-- Status -->
+        <div class="status">
+            <span class="dot"></span>
+            Pipeline Ready
+        </div>
+
+    </main>
 
     <script src="script.js"></script>
 
